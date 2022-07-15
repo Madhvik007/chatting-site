@@ -14,12 +14,12 @@ function send() {
 
 function addm_msg(msg) {
     var buffer = document.getElementById('chatbox').innerHTML;
-    document.getElementById('chatbox').innerHTML = buffer + `<p class = "me">`+msg+" : You"+`</p>`
+    document.getElementById('chatbox').innerHTML = buffer + `<label class = "me">`+msg+" : You"+`</label><br><br>`
 }
 
 function addo_msg(uname, msg) {
     var buffer = document.getElementById('chatbox').innerHTML;
-    document.getElementById('chatbox').innerHTML = buffer + `<p class = "other">`+uname+" : "+msg+`</p>`
+    document.getElementById('chatbox').innerHTML = buffer + `<label class = "other">`+uname+" : "+msg+`</label><br><br>`
 }
 
 
