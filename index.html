@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="http://localhost:7450/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <title>FunChat</title>
+    <style>
+        body {
+            background-color: rgb(253, 253, 190);
+        }
+        #box {
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #msgbox {
+            width: 500px;
+            height: 30px;
+            border-color: rgb(151, 6, 255);
+        }
+        #sendbt {
+            height: 35px;
+            width: 90px;
+        }
+        #chatbox {
+            height: 670px;
+            width: 900px;
+            background-color: white;
+            position: relative;
+            left: 300px;
+            overflow-y: auto;
+        }
+        .me {
+            background-color: rgb(138, 138, 138);
+            color: white;
+            text-align: right;
+            height: 20px;
+        }
+        .other {
+            background-color: rgb(138, 138, 138);
+            color: white;
+            text-align: left;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbox">
+
+    </div>
+    <div id="box">
+    <input type="text" id="msgbox">
+    <button onclick="send()" id="sendbt" type="submit">send</button>
+    </div>
+</body>
+</html>
